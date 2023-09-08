@@ -24,7 +24,7 @@ const MobileNav = ({ showNav, closeNav }) => {
 
         <ul className='mt-16'>
           {links.map((link) => (
-            <li>
+            <li key={link.name}>
               <Link
                 href={link.url}
                 id={link.id}
