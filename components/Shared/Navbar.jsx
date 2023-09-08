@@ -7,14 +7,14 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { BsChevronDown } from 'react-icons/bs';
 import { NavLinkPopup } from '..';
 
-const Navbar = () => {
+const Navbar = ({ openNav }) => {
   const [sublinkToShow, setSublinkToShow] = useState(0);
 
   const toggleSublinks = (id) => setSublinkToShow(id);
 
   return (
-    <nav className='shadow-xl bg-white max-container p-6 rounded-full fixed top-12 px-8 left-[50%] -translate-x-[50%] flex items-center justify-between md:px-12 z-50'>
-      <Image src={headerLogo2} className='max-w-[160px]' />
+    <nav className='shadow-xl bg-white max-container p-6 rounded-full fixed top-12 px-8 left-[50%] -translate-x-[50%] flex items-center justify-between md:px-12 z-20'>
+      <Image src={headerLogo2} className='max-w-[160px]' alt='logo' />
 
       {/* Navlinks */}
       <ul className='hidden lg:flex items-center gap-4 text-lg'>
@@ -48,7 +48,12 @@ const Navbar = () => {
       </ul>
 
       {/* Burger Menu */}
-      <button type='button' title='Burger menu' className='block lg:hidden'>
+      <button
+        type='button'
+        title='Burger menu'
+        className='block lg:hidden'
+        onClick={openNav}
+      >
         <AiOutlineMenu className='text-xl' />
       </button>
     </nav>

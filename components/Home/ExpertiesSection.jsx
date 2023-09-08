@@ -19,7 +19,7 @@ const ExpertiesSection = () => {
         <VecText text='Our Experties' />
       </div>
       <p className='font-bold text-title-dark text-4xl text-center font-serif sm:text-5xl my-4 lg:text-6xl'>
-        Restho's Best Chef
+        Restho`s Best Chef
       </p>
 
       <div className='grid grid-cols-1 mt-16 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8'>

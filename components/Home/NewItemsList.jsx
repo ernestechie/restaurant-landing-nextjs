@@ -50,7 +50,7 @@ const NewItemsList = () => {
               <div className='rotate-45 h-20 w-20 p-2 bg-white rounded-md absolute left-[33%] bottom-[90px] translate-x-[29%] flex items-center justify-center'>
                 <p className='text-xl font-bold text-text-1 -rotate-45'>$50</p>
               </div>
-              <Image src={bannerImage1} className='w-full mb-2' />
+              <Image src={bannerImage1} className='w-full mb-2' alt={'image'} />
               <p className='font-serif font-bold text-white text-center text-2xl sm:text-4xl'>
                 Delicious Food
               </p>

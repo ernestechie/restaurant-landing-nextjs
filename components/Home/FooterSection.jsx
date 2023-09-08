@@ -16,6 +16,7 @@ const FooterSection = () => {
               width={100}
               height={100}
               className='w-44'
+              alt='header image'
             />
 
             <p className='font-bold text-xl text-text-light '>
@@ -29,6 +30,7 @@ const FooterSection = () => {
                 width={100}
                 height={100}
                 className='w-6'
+                alt='subtitle vector'
               />
               <span className='block w-20 h-[1px] bg-primary'></span>
             </div>
